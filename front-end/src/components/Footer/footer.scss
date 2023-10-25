@@ -1,0 +1,58 @@
+@import "../../variables";
+
+footer {
+  background-color: $nav-col;
+  margin-top: 4em;
+  .container {
+    .logo__row {
+      padding-top: 4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      justify-content: center;
+
+      li {
+        list-style-type: none;
+        @include nav-text;
+        font-weight: 500;
+      }
+    }
+    h1 {
+      font-size: 0.6rem;
+      color: $font-col;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 779px) {
+  footer {
+    background-color: $nav-col;
+    margin-top: 4em;
+    .container {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        .footer__line {
+          display: none;
+        }
+      }
+    }
+  }
+}

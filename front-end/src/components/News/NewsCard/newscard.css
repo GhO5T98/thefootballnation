@@ -1,0 +1,21 @@
+.latest__news-card {
+  background-color: #333333;
+  color: #f5f5f5;
+}
+.latest__news-card button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.latest__news-card .card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest__news-card .card-footer .bxs-bookmark-star {
+  font-size: 1.2rem;
+  cursor: pointer;
+}/*# sourceMappingURL=newscard.css.map */

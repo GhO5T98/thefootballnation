@@ -1,0 +1,165 @@
+.hero__section {
+  margin-top: 4.3em;
+}
+.hero__section .carousel img {
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__section .carousel .carousel-indicators {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  top: 40%;
+  margin-right: 7%;
+  gap: 1.5em;
+}
+.hero__section .carousel .carousel-caption {
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  margin: 0 5em;
+  text-align: center;
+}
+.hero__section .carousel .carousel-caption h1 {
+  margin-top: 0.5em;
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero__section .carousel .carousel-caption button {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 3px 30px !important;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.hero__section .hwrap {
+  overflow: hidden;
+  background: #f0705a;
+  display: flex;
+}
+.hero__section .hwrap .hmove {
+  display: flex;
+}
+.hero__section .hwrap .hmove .hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0;
+  text-align: center;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.hero__section .hwrap .hmove .slash {
+  color: #252525;
+  margin: 0 3em;
+}
+@keyframes tickerh {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-300%, 0, 0);
+  }
+}
+.hero__section .hwrap .hmove {
+  animation: tickerh linear 50s infinite;
+}
+.hero__section .hwrap .hmove:hover {
+  animation-play-state: paused;
+}
+.hero__section .hwrap .parallelogram {
+  width: 300px;
+  height: auto;
+  background: #121212;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__section .hwrap .parallelogram h6 {
+  position: absolute;
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  top: 1.2em;
+  white-space: nowrap;
+}
+.hero__section .hwrap .triangle-bottom-left {
+  width: 30px;
+  height: auto;
+  border-top: 50px solid #121212;
+  border-right: 20px solid transparent;
+  z-index: 3;
+}
+
+@media only screen and (max-device-width: 1060px) {
+  .hwrap .parallelogram {
+    display: none;
+  }
+  .hwrap .triangle-bottom-left {
+    display: none;
+  }
+}
+@media only screen and (max-device-width: 992px) {
+  .hero__section .carousel img {
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero__section .carousel .carousel-indicators {
+    top: 45%;
+  }
+  .hero__section .carousel .carousel-caption {
+    top: 30%;
+    margin: 0 1em;
+  }
+  .hero__section .carousel .carousel-caption button {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 3px 30px !important;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .hero__section .hwrap .parallelogram {
+    display: none;
+  }
+  .hero__section .hwrap .triangle-bottom-left {
+    display: none;
+  }
+}
+@media only screen and (max-device-width: 600px) {
+  .hero__section .carousel img {
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero__section .carousel .carousel-indicators {
+    top: 45%;
+  }
+  .hero__section .carousel .carousel-caption {
+    top: 30%;
+  }
+  .hero__section .carousel .carousel-caption h1 {
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .hero__section .hwrap .parallelogram {
+    display: none;
+  }
+  .hero__section .hwrap .triangle-bottom-left {
+    display: none;
+  }
+}/*# sourceMappingURL=hero.css.map */

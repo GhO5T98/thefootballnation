@@ -1,0 +1,191 @@
+@import "../../variables";
+
+.hero__section {
+  margin-top: 4.3em;
+  .carousel {
+    img {
+      height: 80vh;
+      object-fit: cover;
+    }
+
+    .carousel-indicators {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      top: 40%;
+      margin-right: 7%;
+      gap: 1.5em;
+    }
+
+    .carousel-caption {
+      justify-content: center;
+      align-items: center;
+      top: 40%;
+      margin: 0 5em;
+      text-align: center;
+
+      h1 {
+        margin-top: 0.5em;
+        @include hero-text;
+      }
+
+      button {
+        font-size: $tiny-font;
+        text-transform: uppercase;
+        padding: 3px 30px !important;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .hwrap {
+    overflow: hidden;
+    background: $sec-col;
+    display: flex;
+
+    .hmove {
+      display: flex;
+
+      .hitem {
+        flex-shrink: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 0;
+        text-align: center;
+        color: $prim-col;
+        font-size: $sm-font;
+        font-weight: 600;
+      }
+
+      .slash {
+        color: $bg-col;
+        margin: 0 3em;
+      }
+    }
+
+    @keyframes tickerh {
+      0% {
+        transform: translate3d(100%, 0, 0);
+      }
+      100% {
+        transform: translate3d(-300%, 0, 0);
+      }
+    }
+    .hmove {
+      animation: tickerh linear 50s infinite;
+    }
+    .hmove:hover {
+      animation-play-state: paused;
+    }
+
+    .parallelogram {
+      width: 400px;
+      height: auto;
+      background: $nav-col;
+      z-index: 3;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h6 {
+        position: absolute;
+        @include nav-text;
+        font-size: $tiny-font;
+        top: 1.2em;
+        white-space: nowrap;
+      }
+    }
+
+    .triangle-bottom-left {
+      width: 30px;
+      height: auto;
+      border-top: 50px solid $nav-col;
+      border-right: 20px solid transparent;
+      z-index: 3;
+    }
+  }
+}
+@media only screen and (max-device-width: 1060px) {
+  .hwrap {
+    .parallelogram {
+      display: none;
+    }
+
+    .triangle-bottom-left {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 992px) {
+  .hero__section {
+    .carousel {
+      img {
+        height: 60vh;
+        object-fit: cover;
+      }
+
+      .carousel-indicators {
+        top: 45%;
+      }
+
+      .carousel-caption {
+        top: 30%;
+        margin: 0 1em;
+
+        button {
+          font-size: $tiny-font;
+          text-transform: uppercase;
+          padding: 3px 30px !important;
+          border-radius: 3px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .hwrap {
+      .parallelogram {
+        display: none;
+      }
+
+      .triangle-bottom-left {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .hero__section {
+    .carousel {
+      img {
+        height: 50vh;
+        object-fit: cover;
+      }
+
+      .carousel-indicators {
+        top: 45%;
+      }
+
+      .carousel-caption {
+        top: 30%;
+        h1 {
+          @include hero-text;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .hwrap {
+      .parallelogram {
+        display: none;
+      }
+
+      .triangle-bottom-left {
+        display: none;
+      }
+    }
+  }
+}

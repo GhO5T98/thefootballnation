@@ -1,0 +1,119 @@
+@import "../../../variables";
+
+// * {
+//   border: 1px solid red;
+// }
+
+.add__news-section {
+  margin-top: 6em;
+  .addnews__header {
+    display: flex;
+    background-color: $prim-col;
+    border-radius: 5px;
+    margin: 0 0.1em;
+    padding: 0.5em 1.3em;
+    align-content: center;
+    position: relative;
+
+    ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background-color: $sec-col;
+      border-radius: 5px 0 0 5px;
+    }
+    h1 {
+      @include header-text;
+      padding: 0.5em;
+      margin-top: 0.4em;
+      text-align: center;
+    }
+  }
+
+  .add-form__section {
+    background: $prim-col;
+    border-radius: 2px;
+    margin: 0 0.1em;
+    padding: 2em 1em;
+
+    h1 {
+      font-size: 1.4rem;
+      color: $font-col;
+      font-weight: 500;
+      text-align: start;
+    }
+
+    p {
+      color: $font-col;
+      font-size: $tiny-font;
+    }
+
+    .form-label {
+      color: $font-col;
+      font-size: $tiny-font;
+      font-weight: 500;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 2px;
+      background-color: #75757535;
+      color: $font-col;
+      font-size: $tiny-font;
+      padding: 1.3em;
+      cursor: pointer;
+    }
+
+    .form-select option {
+      background-color: $prim-col;
+    }
+
+    .form-check {
+      color: $font-col;
+    }
+
+    .form-check-input[type="checkbox"] {
+      background-color: $font-col;
+      border-color: $font-col;
+      cursor: pointer;
+    }
+    .form-check-input[type="checkbox"]:checked {
+      background-color: $sec-col;
+      border-color: $sec-col;
+      cursor: pointer;
+    }
+
+    ::placeholder {
+      color: $font-col;
+      opacity: 30%;
+    }
+
+    span {
+      color: $sec-col;
+    }
+
+    button {
+      background-color: $sec-col;
+      padding: 10px;
+      font-size: $sm-font;
+      font-weight: 600;
+      width: 70%;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 779px) {
+  .form__section {
+    h1 {
+      text-align: center !important;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

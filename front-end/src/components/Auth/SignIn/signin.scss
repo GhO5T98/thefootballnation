@@ -1,0 +1,148 @@
+/* * {
+  border: 1px dotted red;
+} */
+
+@import "../../../variables";
+
+.sign__in {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+  .left__side {
+    background: $nav-col;
+    color: #ffffff;
+    position: relative;
+
+    img {
+      width: 90px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .left-side__text {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h1 {
+        @include nav-text;
+        color: $sec-col;
+      }
+    }
+  }
+
+  .right__side {
+    background: $bg-col;
+    position: relative;
+
+    .container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 20%;
+
+      h1 {
+        font-size: 35px;
+        font-weight: 800;
+        color: $sec-col;
+        text-transform: uppercase;
+      }
+
+      .signin__form {
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 100% !important;
+          margin-top: 3em;
+          gap: 2em !important;
+        }
+        .text-muted {
+          a {
+            text-decoration: none;
+            color: $sec-col;
+          }
+        }
+
+        .form-label {
+          font-size: 15px;
+          font-weight: 600;
+          color: $font-col;
+
+          span {
+            color: $sec-col;
+          }
+        }
+
+        .form-control {
+          background-color: $prim-col;
+          color: $font-col;
+          border: none;
+        }
+
+        ::placeholder {
+          color: $font-col !important;
+          opacity: 20%;
+        }
+        button {
+          padding: 0.5em 1.5em !important;
+          font-size: 18px;
+          background-color: $sec-col;
+          @include nav-text;
+          color: $nav-col;
+        }
+      }
+    }
+
+    .bottom__text {
+      font-size: 15px;
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+      color: $font-col;
+
+      a {
+        text-decoration: none;
+        color: $sec-col;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 960px) {
+  .sign__in {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+
+    .right__side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .container {
+        width: 85%;
+        border-radius: 0;
+        padding: 3em 0;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+          rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+      }
+      .bottom__text {
+        top: 5em;
+        right: 1em;
+      }
+    }
+
+    .left__side {
+      display: none;
+    }
+  }
+}

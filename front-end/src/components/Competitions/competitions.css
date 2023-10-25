@@ -1,0 +1,119 @@
+.breadcrumb {
+  color: #f5f5f5;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  z-index: 2;
+}
+.breadcrumb .breadcrumb-item {
+  color: #f0705a;
+  text-transform: uppercase;
+}
+.breadcrumb a {
+  color: #f5f5f5;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+.breadcrumb li + li::before {
+  color: #f5f5f5 !important;
+}
+
+.social__media button {
+  width: 100%;
+  padding: 15px 10px;
+  font-weight: 600;
+  color: #f5f5f5;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 1.3em;
+  opacity: 90%;
+}
+.social__media button .bx {
+  font-size: 1.8rem;
+  color: #f5f5f5;
+}
+.social__media button:hover {
+  opacity: 100%;
+}
+.social__media #insta {
+  background-color: #833ab4;
+  border: none;
+}
+.social__media #twitter {
+  background-color: #1da1f2;
+  border: none;
+}
+.social__media #yt {
+  background-color: #ff0000;
+  border: none;
+}
+.social__media #fb {
+  background-color: #4267b2;
+  border: none;
+}
+
+.standings__header {
+  display: flex;
+  background-color: #333333;
+  border-radius: 5px;
+  margin: 0 0.1em;
+  padding: 0.5em 1.3em;
+  align-content: center;
+  position: relative;
+}
+.standings__header ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #f0705a;
+  border-radius: 5px 0 0 5px;
+}
+.standings__header h1 {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: start;
+  padding: 0.5em;
+  margin-top: 0.4em;
+}
+
+.standings__row {
+  margin: 0 0.1em;
+}
+
+.costum__table {
+  border: none;
+}
+.costum__table thead tr {
+  border-radius: 3px;
+}
+.costum__table thead tr .gruop__name {
+  color: #333333;
+}
+.costum__table thead tr th {
+  background-color: #f0705a;
+  border: none;
+  color: #f5f5f5;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.costum__table td {
+  border: none;
+  background-color: #333333;
+  color: #f0705a;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+tbody img {
+  margin-right: 0.3em;
+}/*# sourceMappingURL=competitions.css.map */

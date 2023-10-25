@@ -1,0 +1,134 @@
+/* * {
+  border: 1px dotted red;
+} */
+.sign__in {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.sign__in .left__side {
+  background: #121212;
+  color: #ffffff;
+  position: relative;
+}
+.sign__in .left__side img {
+  width: 90px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sign__in .left__side .left-side__text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sign__in .left__side .left-side__text h1 {
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: #f0705a;
+}
+.sign__in .right__side {
+  background: #252525;
+  position: relative;
+}
+.sign__in .right__side .container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20%;
+}
+.sign__in .right__side .container h1 {
+  font-size: 35px;
+  font-weight: 800;
+  color: #f0705a;
+  text-transform: uppercase;
+}
+.sign__in .right__side .container .signin__form form {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin-top: 3em;
+  gap: 2em !important;
+}
+.sign__in .right__side .container .signin__form .text-muted a {
+  text-decoration: none;
+  color: #f0705a;
+}
+.sign__in .right__side .container .signin__form .form-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+.sign__in .right__side .container .signin__form .form-label span {
+  color: #f0705a;
+}
+.sign__in .right__side .container .signin__form .form-control {
+  background-color: #333333;
+  color: #f5f5f5;
+  border: none;
+}
+.sign__in .right__side .container .signin__form ::-moz-placeholder {
+  color: #f5f5f5 !important;
+  opacity: 20%;
+}
+.sign__in .right__side .container .signin__form ::placeholder {
+  color: #f5f5f5 !important;
+  opacity: 20%;
+}
+.sign__in .right__side .container .signin__form button {
+  padding: 0.5em 1.5em !important;
+  font-size: 18px;
+  background-color: #f0705a;
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: #121212;
+}
+.sign__in .right__side .bottom__text {
+  font-size: 15px;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: #f5f5f5;
+}
+.sign__in .right__side .bottom__text a {
+  text-decoration: none;
+  color: #f0705a;
+}
+
+@media only screen and (max-device-width: 960px) {
+  .sign__in {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+  .sign__in .right__side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign__in .right__side .container {
+    width: 85%;
+    border-radius: 0;
+    padding: 3em 0;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  }
+  .sign__in .right__side .bottom__text {
+    top: 5em;
+    right: 1em;
+  }
+  .sign__in .left__side {
+    display: none;
+  }
+}/*# sourceMappingURL=signin.css.map */

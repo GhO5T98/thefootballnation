@@ -1,0 +1,128 @@
+@import "../../variables";
+
+.breadcrumb {
+  color: $font-col;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: $sm-font;
+
+  z-index: 2;
+  .breadcrumb-item {
+    color: $sec-col;
+    text-transform: uppercase;
+  }
+  a {
+    color: $font-col;
+    text-decoration: none !important;
+    text-transform: uppercase;
+  }
+  li + li::before {
+    color: $font-col !important;
+  }
+}
+
+.social__media {
+  button {
+    width: 100%;
+    padding: 15px 10px;
+    font-weight: 600;
+    color: $font-col;
+    font-size: $sm-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 1.3em;
+    opacity: 90%;
+
+    .bx {
+      font-size: 1.8rem;
+      color: $font-col;
+    }
+  }
+  button:hover {
+    opacity: 100%;
+  }
+
+  #insta {
+    background-color: #833ab4;
+    border: none;
+  }
+  #twitter {
+    background-color: #1da1f2;
+    border: none;
+  }
+  #yt {
+    background-color: #ff0000;
+    border: none;
+  }
+  #fb {
+    background-color: #4267b2;
+    border: none;
+  }
+}
+
+.standings__header {
+  display: flex;
+  background-color: $prim-col;
+  border-radius: 5px;
+  margin: 0 0.1em;
+  padding: 0.5em 1.3em;
+  align-content: center;
+  position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background-color: $sec-col;
+    border-radius: 5px 0 0 5px;
+  }
+
+  h1 {
+    @include header-text;
+    padding: 0.5em;
+    margin-top: 0.4em;
+  }
+}
+
+.standings__row {
+  margin: 0 0.1em;
+}
+
+.costum__table {
+  border: none;
+
+  thead {
+    tr {
+      border-radius: 3px;
+      .gruop__name {
+        color: $prim-col;
+      }
+      th {
+        background-color: $sec-col;
+        border: none;
+        color: $font-col;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    }
+  }
+
+  td {
+    border: none;
+    background-color: $prim-col;
+    color: $sec-col;
+    font-size: $tiny-font;
+    text-align: center;
+  }
+}
+
+tbody img {
+  margin-right: 0.3em;
+}

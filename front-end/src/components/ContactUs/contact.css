@@ -1,0 +1,84 @@
+.contact__section .form__header {
+  display: flex;
+  background-color: #333333;
+  border-radius: 5px;
+  margin: 0 0.1em;
+  padding: 0.5em 1.3em;
+  align-content: center;
+  position: relative;
+}
+.contact__section .form__header ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #f0705a;
+  border-radius: 5px 0 0 5px;
+}
+.contact__section .form__header h1 {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: start;
+  padding: 0.5em;
+  margin-top: 0.4em;
+}
+.contact__section .form__section {
+  background: #333333;
+  border-radius: 2px;
+  margin: 0 0.1em;
+  padding: 2em 1em;
+}
+.contact__section .form__section h1 {
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  font-weight: 500;
+  text-align: start;
+}
+.contact__section .form__section p {
+  color: #f5f5f5;
+  font-size: 0.8rem;
+}
+.contact__section .form__section .form-label {
+  color: #f5f5f5;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.contact__section .form__section .form-control {
+  border-radius: 2px;
+  background-color: rgba(117, 117, 117, 0.2078431373);
+  color: #f5f5f5;
+  font-size: 0.8rem;
+  padding: 1.3em;
+}
+.contact__section .form__section ::-moz-placeholder {
+  color: #f5f5f5;
+  opacity: 30%;
+}
+.contact__section .form__section ::placeholder {
+  color: #f5f5f5;
+  opacity: 30%;
+}
+.contact__section .form__section span {
+  color: #f0705a;
+}
+.contact__section .form__section button {
+  background-color: #f0705a;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 70%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-device-width: 779px) {
+  .form__section h1 {
+    text-align: center !important;
+  }
+  .form__section p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=contact.css.map */
